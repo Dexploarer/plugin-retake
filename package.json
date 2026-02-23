@@ -1,0 +1,42 @@
+{
+  "name": "@dexploarer/plugin-retake-window-capture",
+  "version": "0.1.0-next.0",
+  "description": "Milady plugin scaffold for true macOS window capture (CLI + UI) with Retake streaming",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "elizaos.plugin.json",
+    "README.md"
+  ],
+  "keywords": [
+    "elizaos",
+    "milady",
+    "plugin",
+    "retake",
+    "window-capture"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Dexploarer/retake-window-capture-lab.git"
+  },
+  "scripts": {
+    "build": "tsup",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "prepublishOnly": "bun run build && bun run typecheck && bun run test"
+  },
+  "peerDependencies": {
+    "@elizaos/core": ">=2.0.0"
+  },
+  "devDependencies": {
+    "@elizaos/core": "next",
+    "@types/node": "^24.3.0",
+    "tsup": "^8.5.0",
+    "typescript": "^5.9.2",
+    "vitest": "^4.0.0"
+  }
+}

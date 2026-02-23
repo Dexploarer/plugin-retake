@@ -1,0 +1,28 @@
+{
+  "id": "retake-window-capture",
+  "name": "Retake Window Capture Lab",
+  "description": "Experimental plugin scaffold for true macOS window capture in Milady.",
+  "version": "0.1.0-next.0",
+  "kind": "skill",
+  "requiredSecrets": [],
+  "optionalSecrets": [
+    "RETAKE_ACCESS_TOKEN",
+    "RETAKE_WINDOW_PROCESS",
+    "RETAKE_STREAM_MODE"
+  ],
+  "configSchema": {
+    "type": "object",
+    "properties": {
+      "RETAKE_STREAM_MODE": {
+        "type": "string",
+        "enum": ["ui", "cli", "screen"]
+      },
+      "RETAKE_WINDOW_PROCESS": {
+        "type": "string"
+      },
+      "RETAKE_MAC_DISPLAY_INDEX": {
+        "type": "string"
+      }
+    }
+  }
+}
