@@ -1,4 +1,4 @@
-# @dexploarer/plugin-retake-window-capture
+# @Dexploarer/plugin-retake
 
 Experimental Milady plugin workspace for **true macOS window capture** in Retake streams.
 
